@@ -196,4 +196,12 @@ Clean, labeled axes, no decoration.
 
 ## Deviations
 
-(None at preregistration time.)
+- 2026-11-12 (before any model call): data source changed from FreeSolv
+  `database.txt` v0.52 to the Delaney ESOL dataset
+  (`delaney-processed.csv`, as distributed by DeepChem/MoleculeNet; original
+  data Delaney 2004, J. Chem. Inf. Model. 44(3):1000-1005). Reason: FreeSolv
+  v0.52 yields only 4 eligible molecules in bin C (21-30 heavy atoms), which
+  makes the size-stratified analysis uninformative; ESOL has >= 100 eligible
+  molecules per bin. All filters, strata, seed, and the selection procedure are
+  unchanged. `mol_id` values are `esol_<row index>` of the frozen file.
+

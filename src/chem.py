@@ -44,7 +44,7 @@ def explicit_formula(mol) -> str:
 
 def formula_multiset(formula: str) -> dict[str, int]:
     """'C2H6O' -> {'C': 2, 'H': 6, 'O': 1}"""
-    return {el: int(n) for el, n in re.findall(r"([A-Z][a-z]?)(\d+)", formula)}
+    return {el: int(n or 1) for el, n in re.findall(r"([A-Z][a-z]?)(\d*)", formula)}
 
 
 def n_heavy(mol) -> int:
@@ -78,4 +78,4 @@ def mol_to_xyz(mol, comment: str = "") -> str:
 
 
 def inchikey_conn(mol) -> str:
-    return Chem.MolToInChIKey(mol).split("-")[0]
+    return Chem.MolToInchiKey(mol).split("-")[0]

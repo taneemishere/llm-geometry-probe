@@ -62,7 +62,9 @@ def run_controls():
 
 
 if __name__ == "__main__":
+    import json
     rates = run_controls()
+    Path("results/controls.json").write_text(json.dumps(rates, indent=2))
     for k, v in rates.items():
         print(f"{k}: {v:.3f}")
     assert rates["pos"] >= 0.95, "positive control below 95% - checker is wrong"

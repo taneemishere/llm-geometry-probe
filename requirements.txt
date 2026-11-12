@@ -1,0 +1,7 @@
+rdkit>=2024.09
+numpy
+pandas
+scipy
+matplotlib
+requests
+pytest

@@ -53,28 +53,29 @@ def main():
     Path("results/run_meta.json").write_text(json.dumps(meta, indent=2))
 
     done = 0
-    with RESP.open("a") as rf, ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {}
-        for r, prompt, ph, s in tasks:
+    WAVE = 50
+    with RESP.open("a") as rf:
+        for wstart in range(0, len(tasks), WAVE):
             if estimated_cost() >= BUDGET_USD:
-                print("BUDGET STOP")
+                print(f"BUDGET STOP at {done} calls")
                 break
-            futs[ex.submit(client.chat, prompt, s)] = (r, prompt, ph, s)
-        for fut in as_completed(futs):
-            r, prompt, ph, s = futs[fut]
-            try:
-                out = fut.result()
-            except Exception as e:
-                out = {"content": "", "usage": {}, "error": str(e), "cached": False}
-            rec = {"mol_id": r["mol_id"], "bin": r["bin"], "sample_idx": s,
-                   "model": args.model, "prompt_hash": ph,
-                   "content": out["content"], "cached": out.get("cached", False),
-                   "usage": out.get("usage", {}), "error": out.get("error")}
-            rf.write(json.dumps(rec) + "\n")
-            rf.flush()
-            done += 1
-            if done % 25 == 0:
-                print(f"{done}/{len(tasks)} done, est cost ${estimated_cost():.2f}")
+            wave = tasks[wstart : wstart + WAVE]
+            with ThreadPoolExecutor(max_workers=args.workers) as ex:
+                futs = {ex.submit(client.chat, prompt, s): (r, ph, s) for r, prompt, ph, s in wave}
+                for fut in as_completed(futs):
+                    r, ph, s = futs[fut]
+                    try:
+                        out = fut.result()
+                    except Exception as e:
+                        out = {"content": "", "usage": {}, "error": str(e), "cached": False}
+                    rec = {"mol_id": r["mol_id"], "bin": r["bin"], "sample_idx": s,
+                           "model": args.model, "prompt_hash": ph,
+                           "content": out["content"], "cached": out.get("cached", False),
+                           "usage": out.get("usage", {}), "error": out.get("error")}
+                    rf.write(json.dumps(rec) + "\n")
+                    rf.flush()
+                    done += 1
+            print(f"{done}/{len(tasks)} done, est cost ${estimated_cost():.2f}")
 
     # check every response
     targets = {r["mol_id"]: (mol_from_smiles(r["smiles"]), r["formula"], bool(int(r["has_stereo"]))) for r in rows}
@@ -82,8 +83,13 @@ def main():
         w = csv.writer(f)
         w.writerow(["mol_id", "bin", "sample_idx", "model", "prompt_hash", "cached",
                     "p0", "p1", "p2", "p3", "pass", "stereo", "fail_reason", "p3_stats"])
+        seen = set()
         for ln in RESP.read_text().splitlines():
             rec = json.loads(ln)
+            key = (rec["mol_id"], rec["sample_idx"], rec["model"])
+            if key in seen:
+                continue
+            seen.add(key)
             t = targets[rec["mol_id"]]
             out = run_checks(rec["content"], *t)
             w.writerow([rec["mol_id"], rec["bin"], rec["sample_idx"], rec["model"],

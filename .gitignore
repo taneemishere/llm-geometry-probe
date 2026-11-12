@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+nvapi_key
+.DS_Store
+results/cache/
+data/raw/

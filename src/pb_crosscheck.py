@@ -34,9 +34,10 @@ OUT = Path("results/pb_crosscheck.csv")
 def main():
     from posebusters import PoseBusters
     pb = PoseBusters(config=PB_CFG)
-    resp = {tuple(map(str.strip, k)): json.loads(l)["content"]
-            for l in open("results/responses.jsonl")
-            for k in [(json.loads(l)["mol_id"], json.loads(l)["sample_idx"], json.loads(l)["model"])]}
+    resp = {}
+    for l in open("results/responses.jsonl"):
+        j = json.loads(l)
+        resp[(str(j["mol_id"]), str(j["sample_idx"]), str(j["model"]))] = j["content"]
     rows = list(csv.DictReader(open("results/checks.csv")))
     n_eval = agree = disagree = 0
     with OUT.open("w", newline="") as f:

@@ -96,7 +96,7 @@ def main():
             surv = [r[stage] for r in sub if prev is None or all(r[p] for p in prev)]
             funnel[stage] = {
                 "frac_of_all": float(np.mean([r[stage] and all(r[p] for p in (prev or [])) for r in sub])),
-                "cond": float(np.mean([r[stage] for r in surv])) if surv else 0.0,
+                "cond": float(np.mean(surv)) if surv else 0.0,
             }
             prev = (prev or []) + [stage]
         res["funnel"] = funnel

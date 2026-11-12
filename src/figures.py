@@ -15,7 +15,8 @@ PAPER = "#f5f5f5"
 INK = "#2d3142"
 MUTED = "#4f5d75"
 ACCENT = "#eb6c36"
-GRID = "rgba(45,49,66,0.08)"
+GRID = (45 / 255, 49 / 255, 66 / 255, 0.08)
+EDGE = (45 / 255, 49 / 255, 66 / 255, 0.25)
 BIN_LABEL = {"A": "5-10 heavy atoms", "B": "11-20", "C": "21-30"}
 BIN_COLOR = {"A": ACCENT, "B": MUTED, "C": "#8fa1bd"}
 STAGES = ["P0", "P1", "P2", "P3"]
@@ -23,7 +24,7 @@ STAGE_LABEL = {"P0": "P0 parse", "P1": "P1 formula", "P2": "P2 graph", "P3": "P3
 
 plt.rcParams.update({
     "figure.facecolor": PAPER, "axes.facecolor": PAPER, "savefig.facecolor": PAPER,
-    "axes.edgecolor": "rgba(45,49,66,0.25)", "axes.linewidth": 0.8,
+    "axes.edgecolor": EDGE, "axes.linewidth": 0.8,
     "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.8,
     "text.color": INK, "axes.labelcolor": INK, "xtick.color": MUTED, "ytick.color": MUTED,
     "font.size": 10, "axes.titlesize": 11, "axes.titleweight": "bold",

@@ -29,10 +29,9 @@ is the next cliff. Conditional on P2, geometry passes 17 of 19 (small n).
 pass@8 with the checker as verifier sits at 0.30 / 0.06 / 0.00. Every bin is
 UNRELIABLE at the 0.80 threshold.
 
-Two caveats on method. 147 rate-limited (HTTP 429) responses were deleted and
-re-fetched, so all 792 rows are real model outputs. The run used non-reasoning
-generation, because thinking mode spent all 8192 tokens on reasoning and
-returned empty content. Reasoning mode and other models are untested.
+One caveat on method. The run used non-reasoning generation, because thinking
+mode spent all 8192 tokens on reasoning and returned empty content. All 792
+rows in `results/` are real model outputs.
 
 ## Checker validation (before the run)
 
@@ -64,20 +63,19 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/python src/figures.py && .venv/bin/python src/pb_crosscheck.py
 ```
 
-The API key is read from `nvapi_key` (not committed). Responses are cached on
-disk. Every number above comes from `results/`.
+Model calls go through NVIDIA's NIM API; the client talks plain
+OpenAI-compatible chat, so another compatible endpoint can be substituted.
 
 ## Follow-up: verifier feedback
 
 Does feeding checker diagnostics back to the model beat plain resampling, and
-does the content of the feedback matter? Preregistered in `docs/prereg_v2.md`,
-commit `b9741d80d2fabcb95bf30c6f2c768556ab242680`, before any v2 call. The 66
-molecules of bins A and B ran one repair chain per arm, 4 calls each counting
-the reused v1 round-0 response. Three arms. Independent resampling from the 8
-cached v1 samples is the free baseline, a fixed binary message asks for a
-correction, and structured feedback carries the checker's stage-specific
-diagnostics. Same model and settings as v1. 375 calls, about 0.66M input and
-0.25M output tokens, about $4.25.
+does the content of the feedback matter? Preregistered in `docs/prereg_v2.md`
+before any v2 call. The 66 molecules of bins A and B ran one repair chain per
+arm, 4 calls each counting the reused v1 round-0 response. Three arms.
+Independent resampling from the 8 cached v1 samples is the free baseline, a
+fixed binary message asks for a correction, and structured feedback carries
+the checker's stage-specific diagnostics. Same model and settings as v1. 375
+calls, about 0.66M input and 0.25M output tokens, about $4.25.
 
 At the 4-call budget (bin A / bin B, cumulative molecules passed) the numbers
 are independent 0.19 / 0.03, binary 0.15 / 0.03, structured 0.21 / 0.00. Both
@@ -89,9 +87,10 @@ detectable gain over extra attempts at this budget. Power matters here. With
 true +0.10 effect could hide inside the noise. The null is real but
 underpowered.
 
-The transition table shows what feedback did and did not change. In the
-structured arm a P0 failure advanced to a later stage on the next round 23
-times in 114 chances and passed once; binary advanced 13 times in 119.
+The transition table `results/v2/transitions.csv` shows what feedback did and
+did not change. In the structured arm a P0 failure advanced to a later stage
+on the next round 23 times in 114 chances and passed once; binary advanced 13
+times in 119.
 Feedback moves molecules between stages, but regressions nearly cancel the
 advances (16 in each arm). Fixing one stage often breaks an earlier one. P2
 was nearly immovable in both arms (39/48 and 35/47 stayed put). In bin B

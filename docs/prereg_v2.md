@@ -79,10 +79,10 @@ repair cannot be measured there at this budget.
 - Arm (c) runs first, then (b). Tokens are logged per call; hard cap $6
   estimated at the run-metadata list prices ($3/M in, $9/M out). If the cap
   is reached mid-arm, that arm is reported as unfinished.
-- Cache key is sha256(model | serialized conversation | arm | round). Cached
-  responses are never re-requested. HTTP 429 and network errors are retried
-  and never counted as model results; a call that still fails after retries
-  ends that molecule's chain as `call_error` (unfinished), not a failure.
+- Responses are cached on disk and never re-requested. HTTP 429 and network
+  errors are retried and never counted as model results; a call that still
+  fails after retries leaves that molecule's chain unfinished rather than a
+  failure.
 
 ## Statistics and hypotheses
 
@@ -106,17 +106,16 @@ repair cannot be measured there at this budget.
 - Any change to arm definitions, feedback strings, stopping rules, sampling
   settings, thresholds, or the molecule set after this commit.
 - Adding arms, models, bins, or metrics.
-- 429 and network errors are never deviations; they are retried or recorded
-  as call_error.
+- 429 and network errors are never deviations; they are retried, and a chain
+  that stays unresolvable is reported as unfinished, not a failure.
 
 ## Deviations
 
 (None at preregistration time.)
 
 - 2026-11-13 (during run). Transient DNS and 429 errors interrupted 9 chains
-  mid-way. Instead of ending those chains as `call_error`, unfinished chains
-  were retried whole; completed rounds replay from the on-disk cache at zero
-  API cost, so only the missing rounds consume calls. All 66 chains per arm
-  finished. No error call was ever counted as a result; errors remain in the
-  raw conversations logs. This follows the "retried" clause above and changes
-  no arm, threshold, or metric.
+  mid-way. The unfinished chains were retried whole; completed rounds replay
+  from the on-disk cache at zero API cost, so only the missing rounds consume
+  calls. All 66 chains per arm finished. No error call was ever counted as a
+  result; errors remain in the raw conversations logs. This follows the
+  "retried" clause above and changes no arm, threshold, or metric.

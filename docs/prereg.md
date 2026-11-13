@@ -76,12 +76,10 @@ Format requirements:
 - Sampling is k = 8 samples per molecule, temperature = 1.0, top_p = 1.0,
   max_tokens = 8192, stream = false, seed unset. If the endpoint offers a
   server-side reasoning disable switch it is used and logged in run metadata.
-- Responses are cached on disk, keyed by sha256(model | prompt |
-  sample_index). A cached response is never re-requested.
-- Budget. Prompt and completion tokens are logged per call. The run stops
-  when the estimated cost (tokens at the provider list price recorded in run
-  metadata) reaches $10 or the planned call set is exhausted, whichever comes
-  first.
+- Responses are cached on disk and never re-requested.
+- Budget is a $10 cap on estimated cost, tokens at the provider list price.
+  The run stops at the cap or when the planned call set is exhausted,
+  whichever comes first.
 
 ## Checks (a funnel; each stage requires the previous)
 

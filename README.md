@@ -18,13 +18,21 @@ call; one dated deviation, an early data-source swap).
 
 ## Headline result
 
-It breaks at syntax first. Fraction of samples surviving each stage
-(A / B / C): P0 0.54 / 0.16 / 0.04, P1 0.39 / 0.08 / 0.01,
-P2 0.06 / 0.02 / 0.00, P3 0.06 / 0.01 / 0.00. 75% of failures are P0, nearly
-all of them a count line that disagrees with the body (extra atoms). Given a
-parse, the formula is usually right; connectivity is the next cliff.
-Conditional on P2, geometry passes 17/19. pass@8 with the checker as verifier:
-0.30 / 0.06 / 0.00. Every bin is UNRELIABLE at the 0.80 threshold.
+It fails at enumerating the right atoms for a SMILES string. Zero of the 590
+count-mismatch failures have the correct element multiset: the model writes
+the correct count on line 1 and then lists the wrong atoms. Fraction of
+samples surviving each stage (A / B / C): P0 0.54 / 0.16 / 0.04,
+P1 0.39 / 0.08 / 0.01, P2 0.06 / 0.02 / 0.00, P3 0.06 / 0.01 / 0.00. 75% of
+failures are P0. Given a parse, the formula is usually right; connectivity is
+the next cliff. Conditional on P2, geometry passes 17/19 (small n). pass@8
+with the checker as verifier: 0.30 / 0.06 / 0.00. Every bin is UNRELIABLE at
+the 0.80 threshold.
+
+Two caveats on method: 147 rate-limited (HTTP 429) responses were deleted and
+re-fetched, so all 792 rows are real model outputs; and the run used
+non-reasoning generation because thinking mode spent all 8192 tokens on
+reasoning and returned empty content. Reasoning mode and other models are
+untested.
 
 ## Checker validation (before the run)
 

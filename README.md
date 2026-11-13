@@ -80,15 +80,21 @@ Result at the 4-call budget (bin A / bin B, cumulative molecules passed):
 independent 0.19 / 0.03, binary 0.15 / 0.03, structured 0.21 / 0.00.
 Preregistered tests: H1 (structured minus independent at least 0.10, paired
 cluster bootstrap CI excludes 0) fails in both bins; H2 (structured minus
-binary) fails too. Per the prereg: the checker's feedback adds nothing beyond
-extra attempts at this budget.
+binary) fails too. So the checker's feedback shows no detectable gain over
+extra attempts at this budget. Note the power: with 33 molecules per bin the
+CIs on arm differences run about +-0.12, so this test could not reliably
+detect a true +0.10 effect. The null is real but underpowered.
 
-The transition table shows why. In the structured arm, a P0 failure advanced
-to a later stage on the next round 23 times in 114 chances and passed once;
-binary advanced 13 times in 119. Structured feedback does move molecules, but
-regressions nearly cancel the gains (16 in each arm): fixing one stage often
-breaks an earlier one. P2 was nearly immovable in both arms (39/48 and 35/47
-stayed put). In bin B nothing passed at all under structured feedback.
+The transition table shows what feedback did and did not change. In the
+structured arm, a P0 failure advanced to a later stage on the next round 23
+times in 114 chances and passed once; binary advanced 13 times in 119.
+Structured feedback does move molecules between stages, but regressions
+nearly cancel the advances (16 in each arm): fixing one stage often comes
+with breaking an earlier one. P2 was nearly immovable in both arms (39/48
+and 35/47 stayed put). In bin B nothing passed at all under structured
+feedback. One hypothesis consistent with this table is that the model can
+act on shallow enumeration feedback but not on the deeper chemistry; that is
+an interpretation, not something this design tested.
 
 Limits: one chain per molecule per arm, so chain-to-chain variance is not
 measured. One model, one prompt, non-reasoning generation, small molecules

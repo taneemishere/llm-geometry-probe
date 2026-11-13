@@ -1,84 +1,508 @@
-mol_id,bin,arm,round,stage,p0,p1,p2,p3,pass,fail_reason
-esol_0083,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0083,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0083,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0083,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0050,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0050,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 20 atom lines
-esol_0050,A,struct,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines
-esol_0050,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0112,A,struct,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
-esol_0112,A,struct,1,pass,True,True,True,True,True,
-esol_0026,B,struct,0,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines
-esol_0026,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch
-esol_0026,B,struct,2,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines
-esol_0026,B,struct,3,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines
-esol_0122,B,struct,0,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}"
-esol_0122,B,struct,1,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}"
-esol_0122,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0122,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0023,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
-esol_0023,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch
-esol_0023,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
-esol_0023,B,struct,3,P0,False,False,False,False,False,P0:line 1 not an integer
-esol_0085,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0085,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0085,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0085,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0149,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0149,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0149,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0149,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0114,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 30 atom lines
-esol_0114,B,struct,1,P0,False,False,False,False,False,P0:count line 26 != 25 atom lines
-esol_0114,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 38 atom lines
-esol_0114,B,struct,3,P0,False,False,False,False,False,P0:count line 26 != 36 atom lines
-esol_0220,B,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0220,B,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0220,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0220,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0051,B,struct,0,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines
-esol_0051,B,struct,1,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines
-esol_0051,B,struct,2,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines
-esol_0051,B,struct,3,P0,False,False,False,False,False,P0:count line 33 != 45 atom lines
-esol_0226,B,struct,0,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines
-esol_0226,B,struct,1,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines
-esol_0226,B,struct,2,P0,False,False,False,False,False,P0:count line 35 != 42 atom lines
-esol_0226,B,struct,3,P0,False,False,False,False,False,P0:count line 35 != 47 atom lines
-esol_0314,A,struct,0,pass,True,True,True,True,True,
-esol_0227,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0227,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0227,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0227,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0328,A,struct,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines
-esol_0328,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch
-esol_0328,A,struct,2,P0,False,False,False,False,False,P0:count line 23 != 25 atom lines
-esol_0328,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch
-esol_0137,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch
-esol_0137,B,struct,1,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
-esol_0137,B,struct,2,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
-esol_0137,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch
-esol_0380,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines
-esol_0380,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines
-esol_0380,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines
-esol_0380,A,struct,3,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
-esol_0387,B,struct,0,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
-esol_0387,B,struct,1,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
-esol_0387,B,struct,2,P0,False,False,False,False,False,P0:count line 20 != 21 atom lines
-esol_0387,B,struct,3,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
-esol_0522,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0522,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0522,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0522,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0531,B,struct,0,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines
-esol_0531,B,struct,1,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines
-esol_0531,B,struct,2,P0,False,False,False,False,False,P0:count line 23 != 28 atom lines
-esol_0531,B,struct,3,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines
-esol_0457,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0457,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0457,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0457,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
-esol_0491,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines
-esol_0491,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
-esol_0491,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 24 atom lines
-esol_0491,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch
+mol_id,bin,arm,round,stage,p0,p1,p2,p3,pass,fail_reason,passed,fail_stage
+esol_0083,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0050,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0050,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 20 atom lines,False,P0
+esol_0050,A,struct,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0050,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0112,A,struct,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0112,A,struct,1,pass,True,True,True,True,True,,True,
+esol_0026,B,struct,0,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines,False,P0
+esol_0026,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0026,B,struct,2,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines,False,P0
+esol_0026,B,struct,3,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines,False,P0
+esol_0122,B,struct,0,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}",False,P3
+esol_0122,B,struct,1,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}",False,P3
+esol_0122,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0122,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0023,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0023,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0023,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0023,B,struct,3,P0,False,False,False,False,False,P0:line 1 not an integer,False,P0
+esol_0085,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0114,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 30 atom lines,False,P0
+esol_0114,B,struct,1,P0,False,False,False,False,False,P0:count line 26 != 25 atom lines,False,P0
+esol_0114,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 38 atom lines,False,P0
+esol_0114,B,struct,3,P0,False,False,False,False,False,P0:count line 26 != 36 atom lines,False,P0
+esol_0220,B,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0051,B,struct,0,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0051,B,struct,1,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0051,B,struct,2,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines,False,P0
+esol_0051,B,struct,3,P0,False,False,False,False,False,P0:count line 33 != 45 atom lines,False,P0
+esol_0226,B,struct,0,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines,False,P0
+esol_0226,B,struct,1,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines,False,P0
+esol_0226,B,struct,2,P0,False,False,False,False,False,P0:count line 35 != 42 atom lines,False,P0
+esol_0226,B,struct,3,P0,False,False,False,False,False,P0:count line 35 != 47 atom lines,False,P0
+esol_0314,A,struct,0,pass,True,True,True,True,True,,True,
+esol_0227,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0227,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0227,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0227,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0328,A,struct,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines,False,P0
+esol_0328,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0328,A,struct,2,P0,False,False,False,False,False,P0:count line 23 != 25 atom lines,False,P0
+esol_0328,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0137,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0137,B,struct,1,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0137,B,struct,2,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0137,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0380,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0380,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines,False,P0
+esol_0380,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines,False,P0
+esol_0380,A,struct,3,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0387,B,struct,0,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0387,B,struct,1,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0387,B,struct,2,P0,False,False,False,False,False,P0:count line 20 != 21 atom lines,False,P0
+esol_0387,B,struct,3,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0522,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0531,B,struct,0,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines,False,P0
+esol_0531,B,struct,1,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines,False,P0
+esol_0531,B,struct,2,P0,False,False,False,False,False,P0:count line 23 != 28 atom lines,False,P0
+esol_0531,B,struct,3,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_0457,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0491,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0491,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0491,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 24 atom lines,False,P0
+esol_0491,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0126,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0126,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0126,B,struct,2,P0,False,False,False,False,False,P0:count line 34 != 35 atom lines,False,P0
+esol_0126,B,struct,3,P0,False,False,False,False,False,P0:count line 34 != 33 atom lines,False,P0
+esol_0389,B,struct,0,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,struct,1,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,struct,2,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0316,B,struct,0,P0,False,False,False,False,False,P0:count line 51 != 85 atom lines,False,P0
+esol_0316,B,struct,1,P0,False,False,False,False,False,P0:count line 51 != 172 atom lines,False,P0
+esol_0316,B,struct,2,P0,False,False,False,False,False,P0:count line 51 != 52 atom lines,False,P0
+esol_0316,B,struct,3,P0,False,False,False,False,False,P0:count line 51 != 52 atom lines,False,P0
+esol_0434,B,struct,0,P0,False,False,False,False,False,P0:count line 38 != 45 atom lines,False,P0
+esol_0434,B,struct,1,P0,False,False,False,False,False,P0:count line 38 != 45 atom lines,False,P0
+esol_0434,B,struct,2,P0,False,False,False,False,False,P0:count line 38 != 41 atom lines,False,P0
+esol_0434,B,struct,3,P0,False,False,False,False,False,P0:count line 38 != 41 atom lines,False,P0
+esol_0417,B,struct,0,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0417,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0417,B,struct,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0417,B,struct,3,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0448,B,struct,0,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0448,B,struct,1,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0448,B,struct,2,P0,False,False,False,False,False,P0:count line 11 != 19 atom lines,False,P0
+esol_0448,B,struct,3,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0548,A,struct,0,P0,False,False,False,False,False,P0:count line 10 != 246 atom lines,False,P0
+esol_0548,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0548,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0548,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0620,A,struct,0,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_0620,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0620,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0620,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0629,A,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0629,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0629,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0629,A,struct,3,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0237,A,struct,0,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_0237,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 28 atom lines,False,P0
+esol_0237,A,struct,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0237,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0632,B,struct,0,P0,False,False,False,False,False,P0:count line 24 != 27 atom lines,False,P0
+esol_0632,B,struct,1,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0632,B,struct,2,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0632,B,struct,3,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0651,A,struct,0,P0,False,False,False,False,False,P0:count line 22 != 27 atom lines,False,P0
+esol_0651,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 27 atom lines,False,P0
+esol_0651,A,struct,2,P0,False,False,False,False,False,P0:count line 22 != 27 atom lines,False,P0
+esol_0651,A,struct,3,P0,False,False,False,False,False,P0:count line 22 != 27 atom lines,False,P0
+esol_0646,B,struct,0,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_0646,B,struct,1,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0646,B,struct,2,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0646,B,struct,3,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0657,A,struct,0,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0
+esol_0657,A,struct,1,P0,False,False,False,False,False,P0:line 1 not an integer,False,P0
+esol_0657,A,struct,2,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0
+esol_0657,A,struct,3,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0
+esol_0653,A,struct,0,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0653,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 21 atom lines,False,P0
+esol_0653,A,struct,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0653,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0682,B,struct,0,P0,False,False,False,False,False,P0:count line 27 != 34 atom lines,False,P0
+esol_0682,B,struct,1,P0,False,False,False,False,False,P0:count line 27 != 34 atom lines,False,P0
+esol_0682,B,struct,2,P0,False,False,False,False,False,P0:count line 27 != 33 atom lines,False,P0
+esol_0682,B,struct,3,P0,False,False,False,False,False,P0:count line 27 != 33 atom lines,False,P0
+esol_0658,B,struct,0,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0658,B,struct,1,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0658,B,struct,2,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0658,B,struct,3,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines,False,P0
+esol_0731,B,struct,0,P0,False,False,False,False,False,P0:count line 24 != 30 atom lines,False,P0
+esol_0731,B,struct,1,P0,False,False,False,False,False,P0:count line 24 != 30 atom lines,False,P0
+esol_0731,B,struct,2,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_0731,B,struct,3,P0,False,False,False,False,False,P0:count line 24 != 29 atom lines,False,P0
+esol_0761,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,struct,2,P0,False,False,False,False,False,P0:count line 28 != 29 atom lines,False,P0
+esol_0761,B,struct,3,P0,False,False,False,False,False,P0:count line 28 != 29 atom lines,False,P0
+esol_0422,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0422,B,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0422,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0422,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0686,B,struct,0,P0,False,False,False,False,False,P0:count line 25 != 30 atom lines,False,P0
+esol_0686,B,struct,1,P0,False,False,False,False,False,P0:count line 25 != 30 atom lines,False,P0
+esol_0686,B,struct,2,P0,False,False,False,False,False,P0:count line 25 != 29 atom lines,False,P0
+esol_0686,B,struct,3,P0,False,False,False,False,False,P0:count line 25 != 29 atom lines,False,P0
+esol_0805,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0805,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0805,A,struct,2,pass,True,True,True,True,True,,True,
+esol_0772,B,struct,0,P0,False,False,False,False,False,P0:count line 27 != 29 atom lines,False,P0
+esol_0772,B,struct,1,P0,False,False,False,False,False,P0:count line 27 != 28 atom lines,False,P0
+esol_0772,B,struct,2,P0,False,False,False,False,False,P0:count line 27 != 28 atom lines,False,P0
+esol_0772,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0859,A,struct,0,pass,True,True,True,True,True,,True,
+esol_0828,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 1 atom lines,False,P0
+esol_0828,B,struct,1,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0828,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0828,B,struct,3,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0856,A,struct,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0856,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0856,A,struct,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0856,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0958,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0958,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0958,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0958,A,struct,3,pass,True,True,True,True,True,,True,
+esol_0980,A,struct,0,P0,False,False,False,False,False,P0:count line 12 != 14 atom lines,False,P0
+esol_0980,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0980,A,struct,2,pass,True,True,True,True,True,,True,
+esol_0937,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1035,A,struct,0,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_1035,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1035,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1035,A,struct,3,P3,True,True,True,False,False,"P3:{'bad_bonds': 0, 'bad_angles': 2, 'clashes': 0}",False,P3
+esol_1040,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1017,B,struct,0,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_1017,B,struct,1,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_1017,B,struct,2,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_1017,B,struct,3,P0,False,False,False,False,False,P0:count line 24 != 27 atom lines,False,P0
+esol_1041,B,struct,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines,False,P0
+esol_1041,B,struct,1,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_1041,B,struct,2,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_1041,B,struct,3,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_1044,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1044,A,struct,1,pass,True,True,True,True,True,,True,
+esol_1072,B,struct,0,P0,False,False,False,False,False,P0:count line 30 != 37 atom lines,False,P0
+esol_1072,B,struct,1,P0,False,False,False,False,False,P0:count line 30 != 36 atom lines,False,P0
+esol_1072,B,struct,2,P0,False,False,False,False,False,P0:count line 30 != 35 atom lines,False,P0
+esol_1072,B,struct,3,P0,False,False,False,False,False,P0:count line 30 != 40 atom lines,False,P0
+esol_1103,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1103,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1103,A,struct,2,P0,False,False,False,False,False,P0:count line 21 != 18 atom lines,False,P0
+esol_1103,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1121,A,struct,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1121,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1121,A,struct,2,P0,False,False,False,False,False,P0:count line 14 != 13 atom lines,False,P0
+esol_1121,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1085,B,struct,0,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines,False,P0
+esol_1085,B,struct,1,P0,False,False,False,False,False,P0:count line 33 != 40 atom lines,False,P0
+esol_1085,B,struct,2,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines,False,P0
+esol_1085,B,struct,3,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_1107,B,struct,0,P0,False,False,False,False,False,P0:count line 30 != 29 atom lines,False,P0
+esol_1107,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1107,B,struct,2,P0,False,False,False,False,False,P0:count line 30 != 29 atom lines,False,P0
+esol_1107,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0960,B,struct,0,P0,False,False,False,False,False,P0:count line 33 != 37 atom lines,False,P0
+esol_0960,B,struct,1,P0,False,False,False,False,False,P0:count line 33 != 35 atom lines,False,P0
+esol_0960,B,struct,2,P0,False,False,False,False,False,P0:count line 33 != 37 atom lines,False,P0
+esol_0960,B,struct,3,P0,False,False,False,False,False,P0:count line 33 != 36 atom lines,False,P0
+esol_1011,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 33 atom lines,False,P0
+esol_1011,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 33 atom lines,False,P0
+esol_1011,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 32 atom lines,False,P0
+esol_1011,A,struct,3,P0,False,False,False,False,False,P0:count line 26 != 32 atom lines,False,P0
+esol_0609,A,struct,0,P0,False,False,False,False,False,P0:atom line 3 malformed,False,P0
+esol_0609,A,struct,1,P0,False,False,False,False,False,P0:count line 20 != 19 atom lines,False,P0
+esol_0609,A,struct,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0609,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0424,B,struct,0,P0,False,False,False,False,False,P0:count line 31 != 41 atom lines,False,P0
+esol_0424,B,struct,1,P0,False,False,False,False,False,P0:count line 31 != 33 atom lines,False,P0
+esol_0424,B,struct,2,P0,False,False,False,False,False,P0:count line 31 != 34 atom lines,False,P0
+esol_0424,B,struct,3,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0083,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0083,A,binary,3,P0,False,False,False,False,False,P0:count line 18 != 19 atom lines,False,P0
+esol_0023,B,binary,0,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0023,B,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0023,B,binary,2,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0023,B,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0112,A,binary,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0112,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0112,A,binary,2,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0112,A,binary,3,pass,True,True,True,True,True,,True,
+esol_0050,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0050,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0050,A,binary,2,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0050,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0026,B,binary,0,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines,False,P0
+esol_0026,B,binary,1,P0,False,False,False,False,False,P0:count line 21 != 25 atom lines,False,P0
+esol_0026,B,binary,2,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0026,B,binary,3,P0,False,False,False,False,False,P0:count line 21 != 25 atom lines,False,P0
+esol_0114,B,binary,0,P0,False,False,False,False,False,P0:count line 26 != 30 atom lines,False,P0
+esol_0114,B,binary,1,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0114,B,binary,2,P0,False,False,False,False,False,P0:count line 26 != 30 atom lines,False,P0
+esol_0114,B,binary,3,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0126,B,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0126,B,binary,1,P0,False,False,False,False,False,P0:count line 34 != 35 atom lines,False,P0
+esol_0126,B,binary,2,P0,False,False,False,False,False,P0:count line 34 != 37 atom lines,False,P0
+esol_0126,B,binary,3,P0,False,False,False,False,False,P0:count line 34 != 35 atom lines,False,P0
+esol_0137,B,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0137,B,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0137,B,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0137,B,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0122,B,binary,0,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}",False,P3
+esol_0122,B,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0122,B,binary,2,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0122,B,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0220,B,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0227,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0227,A,binary,1,P0,False,False,False,False,False,P0:count line 13 != 15 atom lines,False,P0
+esol_0227,A,binary,2,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0227,A,binary,3,P0,False,False,False,False,False,P0:count line 13 != 16 atom lines,False,P0
+esol_0149,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0149,A,binary,3,P0,False,False,False,False,False,P0:line 1 not an integer,False,P0
+esol_0314,A,binary,0,pass,True,True,True,True,True,,True,
+esol_0226,B,binary,0,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines,False,P0
+esol_0226,B,binary,1,P0,False,False,False,False,False,P0:count line 35 != 47 atom lines,False,P0
+esol_0226,B,binary,2,P0,False,False,False,False,False,P0:count line 35 != 47 atom lines,False,P0
+esol_0226,B,binary,3,P0,False,False,False,False,False,P0:count line 35 != 45 atom lines,False,P0
+esol_0051,B,binary,0,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0051,B,binary,1,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0051,B,binary,2,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0051,B,binary,3,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines,False,P0
+esol_0328,A,binary,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines,False,P0
+esol_0328,A,binary,1,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_0328,A,binary,2,P0,False,False,False,False,False,P0:count line 23 != 25 atom lines,False,P0
+esol_0328,A,binary,3,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_0237,A,binary,0,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_0237,A,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0237,A,binary,2,P0,False,False,False,False,False,P0:count line 22 != 28 atom lines,False,P0
+esol_0237,A,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0387,B,binary,0,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0387,B,binary,1,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0387,B,binary,2,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0387,B,binary,3,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines,False,P0
+esol_0380,A,binary,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0380,A,binary,1,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines,False,P0
+esol_0380,A,binary,2,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0380,A,binary,3,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0417,B,binary,0,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0417,B,binary,1,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0417,B,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0417,B,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0316,B,binary,0,P0,False,False,False,False,False,P0:count line 51 != 85 atom lines,False,P0
+esol_0316,B,binary,1,P0,False,False,False,False,False,P0:count line 51 != 87 atom lines,False,P0
+esol_0316,B,binary,2,P0,False,False,False,False,False,P0:count line 51 != 66 atom lines,False,P0
+esol_0316,B,binary,3,P0,False,False,False,False,False,P0:count line 51 != 92 atom lines,False,P0
+esol_0424,B,binary,0,P0,False,False,False,False,False,P0:count line 31 != 41 atom lines,False,P0
+esol_0424,B,binary,1,P0,False,False,False,False,False,P0:count line 31 != 43 atom lines,False,P0
+esol_0424,B,binary,2,P0,False,False,False,False,False,P0:count line 31 != 44 atom lines,False,P0
+esol_0424,B,binary,3,P0,False,False,False,False,False,P0:count line 31 != 41 atom lines,False,P0
+esol_0389,B,binary,0,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,binary,1,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,binary,2,P0,False,False,False,False,False,P0:count line 25 != 26 atom lines,False,P0
+esol_0389,B,binary,3,P0,False,False,False,False,False,P0:count line 25 != 27 atom lines,False,P0
+esol_0434,B,binary,0,P0,False,False,False,False,False,P0:count line 38 != 45 atom lines,False,P0
+esol_0434,B,binary,1,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0434,B,binary,2,P0,False,False,False,False,False,P0:count line 38 != 45 atom lines,False,P0
+esol_0434,B,binary,3,P0,False,False,False,False,False,P0:count line 38 != 45 atom lines,False,P0
+esol_0548,A,binary,0,P0,False,False,False,False,False,P0:count line 10 != 246 atom lines,False,P0
+esol_0548,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0548,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0548,A,binary,3,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}",False,P3
+esol_0457,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0457,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0448,B,binary,0,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0448,B,binary,1,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0448,B,binary,2,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0448,B,binary,3,P0,False,False,False,False,False,P0:count line 17 != 19 atom lines,False,P0
+esol_0422,B,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0422,B,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0422,B,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0422,B,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0609,A,binary,0,P0,False,False,False,False,False,P0:atom line 3 malformed,False,P0
+esol_0609,A,binary,1,P0,False,False,False,False,False,P0:count line 20 != 21 atom lines,False,P0
+esol_0609,A,binary,2,P0,False,False,False,False,False,P0:count line 20 != 24 atom lines,False,P0
+esol_0609,A,binary,3,P0,False,False,False,False,False,P0:count line 20 != 19 atom lines,False,P0
+esol_0522,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0522,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0531,B,binary,0,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines,False,P0
+esol_0531,B,binary,1,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines,False,P0
+esol_0531,B,binary,2,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines,False,P0
+esol_0531,B,binary,3,P0,False,False,False,False,False,P0:count line 23 != 26 atom lines,False,P0
+esol_0651,A,binary,0,P0,False,False,False,False,False,P0:count line 22 != 27 atom lines,False,P0
+esol_0651,A,binary,1,P0,False,False,False,False,False,P0:count line 22 != 28 atom lines,False,P0
+esol_0651,A,binary,2,P0,False,False,False,False,False,P0:count line 22 != 28 atom lines,False,P0
+esol_0651,A,binary,3,P0,False,False,False,False,False,P0:count line 22 != 28 atom lines,False,P0
+esol_0653,A,binary,0,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0653,A,binary,1,P0,False,False,False,False,False,P0:count line 22 != 24 atom lines,False,P0
+esol_0653,A,binary,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0653,A,binary,3,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines,False,P0
+esol_0474,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0474,A,binary,3,pass,True,True,True,True,True,,True,
+esol_0682,B,binary,0,P0,False,False,False,False,False,P0:count line 27 != 34 atom lines,False,P0
+esol_0682,B,binary,1,P0,False,False,False,False,False,P0:count line 27 != 35 atom lines,False,P0
+esol_0682,B,binary,2,P0,False,False,False,False,False,P0:count line 27 != 33 atom lines,False,P0
+esol_0682,B,binary,3,P0,False,False,False,False,False,P0:count line 27 != 33 atom lines,False,P0
+esol_0658,B,binary,0,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0658,B,binary,1,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines,False,P0
+esol_0658,B,binary,2,P0,False,False,False,False,False,P0:count line 21 != 24 atom lines,False,P0
+esol_0658,B,binary,3,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines,False,P0
+esol_0731,B,binary,0,P0,False,False,False,False,False,P0:count line 24 != 30 atom lines,False,P0
+esol_0731,B,binary,1,P0,False,False,False,False,False,P0:count line 24 != 29 atom lines,False,P0
+esol_0731,B,binary,2,P0,False,False,False,False,False,P0:count line 24 != 29 atom lines,False,P0
+esol_0731,B,binary,3,P0,False,False,False,False,False,P0:count line 24 != 29 atom lines,False,P0
+esol_0686,B,binary,0,P0,False,False,False,False,False,P0:count line 25 != 30 atom lines,False,P0
+esol_0686,B,binary,1,P0,False,False,False,False,False,P0:count line 25 != 30 atom lines,False,P0
+esol_0686,B,binary,2,P0,False,False,False,False,False,P0:count line 25 != 30 atom lines,False,P0
+esol_0686,B,binary,3,P0,False,False,False,False,False,P0:count line 25 != 29 atom lines,False,P0
+esol_0085,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0085,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0828,B,binary,0,P0,False,False,False,False,False,P0:count line 26 != 1 atom lines,False,P0
+esol_0828,B,binary,1,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0828,B,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0828,B,binary,3,P0,False,False,False,False,False,P0:count line 26 != 31 atom lines,False,P0
+esol_0620,A,binary,0,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_0620,A,binary,1,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_0620,A,binary,2,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_0620,A,binary,3,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_0859,A,binary,0,pass,True,True,True,True,True,,True,
+esol_0629,A,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0629,A,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0629,A,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0629,A,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0761,B,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0491,A,binary,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines,False,P0
+esol_0491,A,binary,1,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0491,A,binary,2,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0491,A,binary,3,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines,False,P0
+esol_0856,A,binary,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines,False,P0
+esol_0856,A,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0856,A,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0856,A,binary,3,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_0960,B,binary,0,P0,False,False,False,False,False,P0:count line 33 != 37 atom lines,False,P0
+esol_0960,B,binary,1,P0,False,False,False,False,False,P0:count line 33 != 37 atom lines,False,P0
+esol_0960,B,binary,2,P0,False,False,False,False,False,P0:count line 33 != 36 atom lines,False,P0
+esol_0960,B,binary,3,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_0805,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0805,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0805,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0805,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0646,B,binary,0,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_0646,B,binary,1,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_0646,B,binary,2,P0,False,False,False,False,False,P0:count line 24 != 27 atom lines,False,P0
+esol_0646,B,binary,3,P0,False,False,False,False,False,P0:count line 24 != 27 atom lines,False,P0
+esol_0980,A,binary,0,P0,False,False,False,False,False,P0:count line 12 != 14 atom lines,False,P0
+esol_0980,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0980,A,binary,2,pass,True,True,True,True,True,,True,
+esol_1035,A,binary,0,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_1035,A,binary,1,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_1035,A,binary,2,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_1035,A,binary,3,P0,False,False,False,False,False,P0:count line 22 != 26 atom lines,False,P0
+esol_1017,B,binary,0,P0,False,False,False,False,False,P0:count line 24 != 28 atom lines,False,P0
+esol_1017,B,binary,1,P0,False,False,False,False,False,P0:count line 24 != 31 atom lines,False,P0
+esol_1017,B,binary,2,P0,False,False,False,False,False,P0:count line 24 != 33 atom lines,False,P0
+esol_1017,B,binary,3,P0,False,False,False,False,False,P0:count line 24 != 33 atom lines,False,P0
+esol_0958,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0958,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0958,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0958,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1040,A,binary,3,P0,False,False,False,False,False,P0:count line 19 != 24 atom lines,False,P0
+esol_0632,B,binary,0,P0,False,False,False,False,False,P0:count line 24 != 27 atom lines,False,P0
+esol_0632,B,binary,1,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0632,B,binary,2,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_0632,B,binary,3,P0,False,False,False,False,False,P0:count line 24 != 26 atom lines,False,P0
+esol_1103,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1103,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1103,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1103,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1085,B,binary,0,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines,False,P0
+esol_1085,B,binary,1,P0,False,False,False,False,False,P0:count line 33 != 41 atom lines,False,P0
+esol_1085,B,binary,2,P0,False,False,False,False,False,P0:too few lines,False,P0
+esol_1085,B,binary,3,P0,False,False,False,False,False,P0:count line 33 != 42 atom lines,False,P0
+esol_0772,B,binary,0,P0,False,False,False,False,False,P0:count line 27 != 29 atom lines,False,P0
+esol_0772,B,binary,1,P0,False,False,False,False,False,P0:count line 27 != 29 atom lines,False,P0
+esol_0772,B,binary,2,P0,False,False,False,False,False,P0:count line 27 != 29 atom lines,False,P0
+esol_0772,B,binary,3,P0,False,False,False,False,False,P0:count line 27 != 29 atom lines,False,P0
+esol_1044,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1044,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1044,A,binary,2,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1044,A,binary,3,P0,False,False,False,False,False,P0:count line 13 != 14 atom lines,False,P0
+esol_1011,A,binary,0,P0,False,False,False,False,False,P0:count line 26 != 33 atom lines,False,P0
+esol_1011,A,binary,1,P0,False,False,False,False,False,P0:count line 26 != 34 atom lines,False,P0
+esol_1011,A,binary,2,P0,False,False,False,False,False,P0:count line 26 != 35 atom lines,False,P0
+esol_1011,A,binary,3,P0,False,False,False,False,False,P0:line 1 not an integer,False,P0
+esol_0937,A,binary,0,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,binary,1,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,binary,2,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_0937,A,binary,3,P2,True,True,False,False,False,P2:connectivity mismatch,False,P2
+esol_1072,B,binary,0,P0,False,False,False,False,False,P0:count line 30 != 37 atom lines,False,P0
+esol_1072,B,binary,1,P0,False,False,False,False,False,P0:count line 30 != 36 atom lines,False,P0
+esol_1072,B,binary,2,P0,False,False,False,False,False,P0:count line 30 != 36 atom lines,False,P0
+esol_1072,B,binary,3,P0,False,False,False,False,False,P0:count line 30 != 37 atom lines,False,P0
+esol_1041,B,binary,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines,False,P0
+esol_1041,B,binary,1,pass,True,True,True,True,True,,True,
+esol_1121,A,binary,0,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1121,A,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1121,A,binary,2,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_1121,A,binary,3,P0,False,False,False,False,False,P0:count line 14 != 15 atom lines,False,P0
+esol_1107,B,binary,0,P0,False,False,False,False,False,P0:count line 30 != 29 atom lines,False,P0
+esol_1107,B,binary,1,P1,True,False,False,False,False,P1:formula mismatch,False,P1
+esol_1107,B,binary,2,P0,False,False,False,False,False,P0:count line 30 != 35 atom lines,False,P0
+esol_1107,B,binary,3,P0,False,False,False,False,False,P0:count line 30 != 31 atom lines,False,P0
+esol_0657,A,binary,0,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0
+esol_0657,A,binary,1,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0
+esol_0657,A,binary,2,P0,False,False,False,False,False,P0:count line 17 != 25 atom lines,False,P0
+esol_0657,A,binary,3,P0,False,False,False,False,False,P0:count line 17 != 22 atom lines,False,P0

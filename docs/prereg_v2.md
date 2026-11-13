@@ -111,3 +111,11 @@ repair cannot be measured there at this budget.
 ## Deviations
 
 (None at preregistration time.)
+
+- 2025-07-08 (during run): transient DNS and 429 errors interrupted 9 chains
+  mid-way. Instead of ending those chains as `call_error`, unfinished chains
+  were retried whole; completed rounds replay from the on-disk cache at zero
+  API cost, so only the missing rounds consume calls. All 66 chains per arm
+  finished. No error call was ever counted as a result; errors remain in the
+  raw conversations logs. This follows the "retried" clause above and changes
+  no arm, threshold, or metric.

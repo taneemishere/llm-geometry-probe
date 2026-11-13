@@ -64,3 +64,39 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 API key read from `nvapi_key` (not committed). Responses are cached on disk.
 All numbers above come from `results/`.
+
+## Follow-up: verifier feedback
+
+Does feeding checker diagnostics back to the model beat plain resampling, and
+does feedback content matter? Preregistered in `docs/prereg_v2.md`, commit
+`b9741d80d2fabcb95bf30c6f2c768556ab242680`, before any v2 call. The 66
+molecules of bins A and B ran one repair chain per arm, 4 calls each counting
+the reused v1 round-0 response: (a) independent resampling from the 8 cached
+v1 samples (free baseline), (b) fixed binary message, (c) stage-specific
+structured feedback. Same model and settings. 375 calls, about 0.66M input
+and 0.25M output tokens, about $4.25.
+
+Result at the 4-call budget (bin A / bin B, cumulative molecules passed):
+independent 0.19 / 0.03, binary 0.15 / 0.03, structured 0.21 / 0.00.
+Preregistered tests: H1 (structured minus independent at least 0.10, paired
+cluster bootstrap CI excludes 0) fails in both bins; H2 (structured minus
+binary) fails too. Per the prereg: the checker's feedback adds nothing beyond
+extra attempts at this budget.
+
+The transition table shows why. In the structured arm, a P0 failure advanced
+to a later stage on the next round 23 times in 114 chances and passed once;
+binary advanced 13 times in 119. Structured feedback does move molecules, but
+regressions nearly cancel the gains (16 in each arm): fixing one stage often
+breaks an earlier one. P2 was nearly immovable in both arms (39/48 and 35/47
+stayed put). In bin B nothing passed at all under structured feedback.
+
+Limits: one chain per molecule per arm, so chain-to-chain variance is not
+measured. One model, one prompt, non-reasoning generation, small molecules
+only. Bin C was excluded per the prereg (v1 pass rate 0.00).
+
+```
+.venv/bin/python src/repair.py --arm struct   # then --arm binary
+.venv/bin/python src/analyze_v2.py && .venv/bin/python src/figures_v2.py
+```
+
+All v2 numbers come from `results/v2/`.

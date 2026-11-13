@@ -156,7 +156,8 @@ def main():
                             ck_f.flush()
                     else:
                         retry.append(r)
-            not_started = [r for r in pending if r["mol_id"] not in {x["mol_id"] for x in futs}]
+            started = {r["mol_id"] for r in futs.values()}
+            not_started = [r for r in pending if r["mol_id"] not in started]
             pending = retry + not_started
             if pass_no > 0:
                 print(f"retry pass {pass_no}: {len(pending)} chains")

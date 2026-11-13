@@ -147,9 +147,9 @@ def test_loop_stops_at_first_pass():
     bad = "9\nc\nC 0 0 0\n" + "\n".join(f"H {i} 0 0" for i in range(8))
     client = FakeClient([bad, good, good])
     v1_r0 = {"esol_x": bad}
-    recs = repair.run_chain(_row(), "struct", client, v1_r0, FakeFile())
+    recs, finished = repair.run_chain(_row(), "struct", client, v1_r0, FakeFile())
     assert len(client.calls) == 2          # round0(bad) -> r1 bad -> r2 good
-    assert recs[-1]["pass"] is True
+    assert finished and recs[-1]["pass"] is True
     assert all(r["round"] == i for i, r in enumerate(recs))
 
 
@@ -157,17 +157,17 @@ def test_loop_max_four_calls():
     bad = "9\nc\nC 0 0 0\n" + "\n".join(f"H {i} 0 0" for i in range(8))
     client = FakeClient([bad])
     v1_r0 = {"esol_x": bad}
-    recs = repair.run_chain(_row(), "binary", client, v1_r0, FakeFile())
+    recs, finished = repair.run_chain(_row(), "binary", client, v1_r0, FakeFile())
     assert len(client.calls) == 3          # rounds 1,2,3
-    assert not recs[-1]["pass"]
+    assert finished and not recs[-1]["pass"]
 
 
 def test_call_error_not_a_result():
     bad = "9\nc\nC 0 0 0\n" + "\n".join(f"H {i} 0 0" for i in range(8))
     client = FakeClient(["__error__"])
-    recs = repair.run_chain(_row(), "struct", client, {"esol_x": bad}, FakeFile())
-    assert recs[-1]["stage"] == "call_error"
-    assert "pass" not in recs[-1]
+    recs, finished = repair.run_chain(_row(), "struct", client, {"esol_x": bad}, FakeFile())
+    assert not finished                      # unfinished chain gets retried
+    assert all("pass" in r for r in recs)    # only completed rounds recorded
 
 
 def test_cache_key_distinguishes():

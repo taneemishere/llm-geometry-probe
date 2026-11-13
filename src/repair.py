@@ -1,9 +1,10 @@
 """v2 repair loop: binary and structured feedback arms (prereg v2).
 
 Round 0 reuses the cached v1 sample idx 0. Rounds 1-3 send feedback and retry.
-Stop at first pass, max 4 calls per molecule incl. round 0. 429/network errors
-are retried inside the client and never counted as results; a call that still
-fails marks the chain 'call_error' (unfinished).
+Stop at first pass, max 4 calls per molecule incl. round 0. Call errors
+(429, network) are never counted as results: the chain is retried on the next
+pass; if it still fails the molecule is reported unfinished. Errors remain in
+the raw conversations log.
 """
 from __future__ import annotations
 
@@ -73,17 +74,15 @@ def run_chain(row, arm, client, v1_r0, conv_f):
                                          "error": api_err}) + "\n")
                 conv_f.flush()
             if api_err is not None:
-                recs.append({"mol_id": row["mol_id"], "bin": row["bin"], "arm": arm,
-                             "round": rnd, "stage": "call_error"})
-                return recs
+                return recs, False
         out = run_checks(prev, target, row["formula"], bool(int(row["has_stereo"])))
         recs.append({"mol_id": row["mol_id"], "bin": row["bin"], "arm": arm, "round": rnd,
                      "stage": stage_of(out), "p0": out["p0"], "p1": out["p1"], "p2": out["p2"],
                      "p3": out["p3"], "pass": out["p0"] and out["p1"] and out["p2"] and out["p3"],
                      "fail_reason": out["fail_reason"]})
         if recs[-1]["pass"]:
-            return recs
-    return recs
+            return recs, True
+    return recs, True
 
 
 def main():
@@ -129,27 +128,42 @@ def main():
                     done_mols.add(r["mol_id"])  # chains write all rounds atomically
         pending = [r for r in rows if r["mol_id"] not in done_mols]
         print(f"arm {arm}: {len(pending)} chains pending")
-        with ThreadPoolExecutor(max_workers=args.workers) as ex:
-            futs = {}
-            for r in pending:
-                if estimated_cost(USAGE_V2) >= BUDGET_USD:
-                    print(f"BUDGET STOP in arm {arm}")
-                    break
-                futs[ex.submit(run_chain, r, arm, client, v1_r0, conv_f)] = r
-            unfinished = len(pending) - len(futs)
-            for fut in as_completed(futs):
-                try:
-                    for rec in fut.result():
-                        w.writerow([rec.get("mol_id"), rec.get("bin"), rec.get("arm"),
-                                    rec.get("round"), rec.get("stage"), rec.get("p0"),
-                                    rec.get("p1"), rec.get("p2"), rec.get("p3"),
-                                    rec.get("pass"), rec.get("fail_reason", "")])
-                        ck_f.flush()
-                except Exception as e:
-                    print("chain exception:", e)
+        for pass_no in range(1 + 3):  # initial pass + up to 3 retry passes
+            if not pending:
+                break
+            with ThreadPoolExecutor(max_workers=args.workers) as ex:
+                futs = {}
+                for r in pending:
+                    if estimated_cost(USAGE_V2) >= BUDGET_USD:
+                        print(f"BUDGET STOP in arm {arm}")
+                        break
+                    futs[ex.submit(run_chain, r, arm, client, v1_r0, conv_f)] = r
+                retry = []
+                for fut in as_completed(futs):
+                    r = futs[fut]
+                    try:
+                        recs, finished = fut.result()
+                    except Exception as e:
+                        print("chain exception:", r["mol_id"], e)
+                        retry.append(r)
+                        continue
+                    if finished:
+                        for rec in recs:
+                            w.writerow([rec.get("mol_id"), rec.get("bin"), rec.get("arm"),
+                                        rec.get("round"), rec.get("stage"), rec.get("p0"),
+                                        rec.get("p1"), rec.get("p2"), rec.get("p3"),
+                                        rec.get("pass"), rec.get("fail_reason", "")])
+                            ck_f.flush()
+                    else:
+                        retry.append(r)
+            not_started = [r for r in pending if r["mol_id"] not in {x["mol_id"] for x in futs}]
+            pending = retry + not_started
+            if pass_no > 0:
+                print(f"retry pass {pass_no}: {len(pending)} chains")
         conv_f.close()
-        if unfinished:
-            print(f"arm {arm}: {unfinished} molecules not started (budget)")
+        if pending:
+            print(f"arm {arm}: {len(pending)} molecules unfinished "
+                  f"(budget or persistent call errors)")
     ck_f.close()
     print(f"done. est v2 cost ${estimated_cost(USAGE_V2):.2f}")
 

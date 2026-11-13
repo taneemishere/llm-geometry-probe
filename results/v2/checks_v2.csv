@@ -1,0 +1,84 @@
+mol_id,bin,arm,round,stage,p0,p1,p2,p3,pass,fail_reason
+esol_0083,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0083,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0083,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0083,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0050,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0050,A,struct,1,P0,False,False,False,False,False,P0:count line 22 != 20 atom lines
+esol_0050,A,struct,2,P0,False,False,False,False,False,P0:count line 22 != 23 atom lines
+esol_0050,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0112,A,struct,0,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
+esol_0112,A,struct,1,pass,True,True,True,True,True,
+esol_0026,B,struct,0,P0,False,False,False,False,False,P0:count line 21 != 22 atom lines
+esol_0026,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch
+esol_0026,B,struct,2,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines
+esol_0026,B,struct,3,P0,False,False,False,False,False,P0:count line 21 != 23 atom lines
+esol_0122,B,struct,0,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}"
+esol_0122,B,struct,1,P3,True,True,True,False,False,"P3:{'bad_bonds': 1, 'bad_angles': 0, 'clashes': 0}"
+esol_0122,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0122,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0023,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
+esol_0023,B,struct,1,P1,True,False,False,False,False,P1:formula mismatch
+esol_0023,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
+esol_0023,B,struct,3,P0,False,False,False,False,False,P0:line 1 not an integer
+esol_0085,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0085,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0085,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0085,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0149,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0149,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0149,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0149,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0114,B,struct,0,P0,False,False,False,False,False,P0:count line 26 != 30 atom lines
+esol_0114,B,struct,1,P0,False,False,False,False,False,P0:count line 26 != 25 atom lines
+esol_0114,B,struct,2,P0,False,False,False,False,False,P0:count line 26 != 38 atom lines
+esol_0114,B,struct,3,P0,False,False,False,False,False,P0:count line 26 != 36 atom lines
+esol_0220,B,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0220,B,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0220,B,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0220,B,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0051,B,struct,0,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines
+esol_0051,B,struct,1,P0,False,False,False,False,False,P0:count line 33 != 55 atom lines
+esol_0051,B,struct,2,P0,False,False,False,False,False,P0:count line 33 != 43 atom lines
+esol_0051,B,struct,3,P0,False,False,False,False,False,P0:count line 33 != 45 atom lines
+esol_0226,B,struct,0,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines
+esol_0226,B,struct,1,P0,False,False,False,False,False,P0:count line 35 != 46 atom lines
+esol_0226,B,struct,2,P0,False,False,False,False,False,P0:count line 35 != 42 atom lines
+esol_0226,B,struct,3,P0,False,False,False,False,False,P0:count line 35 != 47 atom lines
+esol_0314,A,struct,0,pass,True,True,True,True,True,
+esol_0227,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0227,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0227,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0227,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0328,A,struct,0,P0,False,False,False,False,False,P0:count line 23 != 22 atom lines
+esol_0328,A,struct,1,P1,True,False,False,False,False,P1:formula mismatch
+esol_0328,A,struct,2,P0,False,False,False,False,False,P0:count line 23 != 25 atom lines
+esol_0328,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch
+esol_0137,B,struct,0,P1,True,False,False,False,False,P1:formula mismatch
+esol_0137,B,struct,1,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
+esol_0137,B,struct,2,P0,False,False,False,False,False,P0:count line 17 != 18 atom lines
+esol_0137,B,struct,3,P1,True,False,False,False,False,P1:formula mismatch
+esol_0380,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines
+esol_0380,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines
+esol_0380,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 28 atom lines
+esol_0380,A,struct,3,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
+esol_0387,B,struct,0,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
+esol_0387,B,struct,1,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
+esol_0387,B,struct,2,P0,False,False,False,False,False,P0:count line 20 != 21 atom lines
+esol_0387,B,struct,3,P0,False,False,False,False,False,P0:count line 20 != 22 atom lines
+esol_0522,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0522,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0522,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0522,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0531,B,struct,0,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines
+esol_0531,B,struct,1,P0,False,False,False,False,False,P0:count line 23 != 29 atom lines
+esol_0531,B,struct,2,P0,False,False,False,False,False,P0:count line 23 != 28 atom lines
+esol_0531,B,struct,3,P0,False,False,False,False,False,P0:count line 23 != 24 atom lines
+esol_0457,A,struct,0,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0457,A,struct,1,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0457,A,struct,2,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0457,A,struct,3,P2,True,True,False,False,False,P2:connectivity mismatch
+esol_0491,A,struct,0,P0,False,False,False,False,False,P0:count line 26 != 29 atom lines
+esol_0491,A,struct,1,P0,False,False,False,False,False,P0:count line 26 != 27 atom lines
+esol_0491,A,struct,2,P0,False,False,False,False,False,P0:count line 26 != 24 atom lines
+esol_0491,A,struct,3,P1,True,False,False,False,False,P1:formula mismatch

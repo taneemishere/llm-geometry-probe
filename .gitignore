@@ -5,3 +5,4 @@ nvapi_key
 .DS_Store
 results/cache/
 data/raw/
+results/v2/cache/
